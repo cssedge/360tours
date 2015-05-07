@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>About Us | Asea Spa</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/lavalamp.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="scripts/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="scripts/pluginpage.js"></script>
+<script type="text/javascript" src="scripts/jquery.pngFix.pack.js"></script>
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('div.container').pngFix( );
+	});
+</script>
+
+<script type="text/javascript" src="scripts/jsScroller.js"></script>
+<script type="text/javascript" src="scripts/jsScrollbar.js"></script>
+<script type="text/javascript">
+var scroller  = null;
+var scrollbar = null;
+window.onload = function () {
+  scroller  = new jsScroller(document.getElementById("Scroller-1"), 630, 250);
+  scrollbar = new jsScrollbar (document.getElementById("Scrollbar-Container"), scroller, false);
+}
+</script>
+
+<script type="text/javascript">
+function slideSwitch() {
+    var $active = $('#slideshow DIV.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow DIV:last');
+
+    // use this to pull the divs in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow DIV:first');
+
+    // uncomment below to pull the divs randomly
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 3500, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 8000 );
+});
+
+</script>
+
+<script type="text/javascript" src="scripts/jquery.easing.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.lavalamp.min.js"></script>
+<script type="text/javascript">
+        $(function() {
+            $("#1, #2, #3").lavaLamp({
+                fx: "backout",
+                speed: 700,
+                click: function(event, menuItem) {
+                    return true;
+                }
+            });
+        });
+</script>
+</head>
+
+
+<body>
+	<div class="container">
+    	<div id="header">
+			<h1><a href="index.html">asea - spa by nature</a></h1>
+
+          <div class="main_nav">
+            <ul class="lavaLampBottomStyle" id="3">
+                    <li><a href="index.html">home</a></li>
+                    <li class="current"><a href="about-us.html">about us</a></li>
+                    <li><a href="location.html">location</a></li>
+                    <li><a href="treatments.html">treatments</a></li>
+                    <li><a href="our-products.html">our products</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="careers.html">career</a></li>
+                    <li><a href="contact-us.php">contact us</a></li>
+                </ul>
+          </div>
+        </div>
+        
+		<div id="content">
+			<div id="right_pan">
+				<div style="visibility: visible;" id="Scrollbar-Container">
+					<img src="scripts/up_arrow.gif" class="Scrollbar-Up" alt="Scroll Up" />
+					<img src="scripts/down_arrow.gif" class="Scrollbar-Down" alt="Scroll Down" />
+					<div class="Scrollbar-Track">
+						<img style="top: 0px; left: 0px; visibility: visible;" src="scripts/scrollbar_handle.gif" class="Scrollbar-Handle" alt="Scrollbar Handle" />				
+					</div>
+				</div>
+				<!-- End of Scroll -->
+            
+				<div id="Scroller-1">
+					<div style="left: 0px; top: 0px;" class="Scroller-Container">
+                        <h2>about us</h2>
+                        <h3>History</h3>
+                      <p> Asea Spa is an international spa operator company created in 2005. Aurelie Denoueix, her Fondator, changed her life after living in Bali for few years. She found in love with the magic Island, the Balinese people and their ancestral therapies and natural recipes. She decided to share her experience with others and provide the benefits of The Asian Tropical Spa.</p>
+                      <h3>Managing your Spa</h3>
+                        <p> When you partner with Asea Spa, you gain more than just an association with any spa operator. The ultimate aim is to develop a team of professional, loyal and dedicated employees who will strive to enhance the guests' experience by delivering nothing less than the 'perfect touch'. Naturally, while we are adding all of those extra touches to your guest's experience, we will also be ensuring that you are making a profit. To explore how a partnership with Asea Spa can benefit you, contact us. </p>
+                        <h3>Vision and Mission</h3>
+                        <p> Back to Nature and Emotions.</p>
+                      <p>Asea Spa Mission is to use all the benefits of the nature and natural healing to provide the best Spa Experience. </p>
+<p>The Asea Spa experience is an holistic approach where all the 5 senses are awacked to seek into a deep sensation of well being</p>
+<p>Our well trained therapists' mission is to deliver high quality service and provide treatments from the heart. An emotional bliss! </p>
+<p>Have happiness and harmony in our work to deliver the perfect touch to our guest.</p>
+<p>Develop the asea spa company goals and financial results.</p>
+					</div>
+				</div>
+			</div>
+			<!-- End of Right Pan -->
+      </div>
+      <!-- End of Content-->
+
+
+	<div id="slideshow">
+		<div class="active"><img src="images/image1.jpg" alt="Slideshow Image 2" width="1000" height="460" /></div>
+        <div><img src="images/image2.jpg" alt="Slideshow Image 2" width="1000" height="460" /></div>
+		<div><img src="images/image3.jpg" alt="Slideshow Image 3" width="1000" height="460" /></div>
+		<div><img src="images/image4.jpg" alt="Slideshow Image 4" width="1000" height="460" /></div>
+        <div><img src="images/image5.jpg" alt="Slideshow Image 5" width="1000" height="460" /></div>
+        <div><img src="images/image6.jpg" alt="Slideshow Image 6" width="1000" height="460" /></div>
+	</div>
+    
+	<div id="footer">&copy; 2010 asea spa - All Rights Reserved | Powered by GPnet.biz</div>
+    
+</div>
+</body>
+</html>
