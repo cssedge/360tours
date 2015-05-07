@@ -311,7 +311,7 @@
 
 	/*
 	function make_script_tag(src) {
-		var tag = '<script type="text/javascript" src="';
+		var tag = '<script type="text/javascript" src="../../../../Relegions Centerdata/graphics/KolorMap/lib/';
 		tag += src;
 		tag += '"></script>';
 		return tag;
