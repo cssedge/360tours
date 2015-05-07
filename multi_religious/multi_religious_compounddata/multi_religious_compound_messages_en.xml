@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <krpano>
 
+<!-- ************************ -->
+<!--         Messages         -->
+<!-- ************************ -->
 
   <data name="en_project_title"><![CDATA[New Project]]></data>
 
